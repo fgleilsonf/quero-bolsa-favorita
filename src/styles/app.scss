@@ -32,10 +32,13 @@ header.header__menu {
   right: 0;
   background-color: $white;
   z-index: 2;
-  height: 64px;
+  height: 70px;
 
-  .header__menu-item--a {
-    div {
+  .header__menu-item {
+    display: flex;
+    flex-direction: row;
+
+    .header__menu-item--div {
       display: flex;
       flex: 1;
       align-items: center;
@@ -46,7 +49,7 @@ header.header__menu {
       padding-right: 10px;
 
       i {
-        font-size: 22px;
+        font-size: 30px;
       }
 
       span {
@@ -54,11 +57,17 @@ header.header__menu {
         font-weight: 600;
       }
     }
+
+    .header__menu-item--divider {
+      display: flex;
+      flex: 1;
+      border: 2px solid #e4e4e46b;
+    }
   }
 }
 
 div.container {
-  padding-top: 64px;
+  padding-top: 70px;
 
   .container__menus {
     display: flex;

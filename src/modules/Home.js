@@ -33,23 +33,23 @@ class Home extends React.Component {
         return (
             <div>
                 <header className="header__menu">
-                    <a className="header__menu-item--a">
-                        <div>
+                    <div className="header__menu-item">
+                        <div className="header__menu-item--div">
                             <i className="fa fa-info-circle"></i>
                             <span>Ajuda</span>
                         </div>
-                        <div></div>
-                    </a>
+                        <div className="header__menu-item--divider"></div>
+                    </div>
                     <a>
                         <img src={url} className="logo" alt="logo"/>
                     </a>
-                    <a className="header__menu-item--a">
-                        <div>
+                    <div className="header__menu-item">
+                        <div className="header__menu-item--divider"></div>
+                        <div className="header__menu-item--div">
                             <i className="fa fa-user-circle-o"></i>
                             <span>Conta</span>
                         </div>
-                        <div></div>
-                    </a>
+                    </div>
                 </header>
 
                 <div className="container">
