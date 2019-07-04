@@ -1,0 +1,153 @@
+body {
+  background: #FBFBFB;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.logo {
+  display: block;
+  width: 100px;
+  height: 50px; }
+
+.primary-color {
+  color: #18ACC4; }
+
+header.header__menu {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #FFF;
+  z-index: 2;
+  height: 64px; }
+  header.header__menu .header__menu-item--a div {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #007A8D;
+    padding-left: 10px;
+    padding-right: 10px; }
+    header.header__menu .header__menu-item--a div i {
+      font-size: 22px; }
+    header.header__menu .header__menu-item--a div span {
+      font-size: 20px;
+      font-weight: 600; }
+
+div.container {
+  padding-top: 64px; }
+  div.container .container__menus {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background: #18ACC4; }
+    div.container .container__menus a {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #FFF;
+      margin-left: 20px;
+      margin-right: 20px; }
+      div.container .container__menus a i {
+        font-size: 16px; }
+  div.container .container__menu {
+    color: #007A8D;
+    margin-top: 20px;
+    font-weight: bold; }
+    div.container .container__menu i {
+      margin-right: 10px; }
+  div.container .container__subtitle--p {
+    font-size: 20px; }
+  div.container .container__content {
+    padding: 0 20px; }
+    div.container .container__content .container__content__menu ul {
+      display: initial; }
+      div.container .container__content .container__content__menu ul li {
+        list-style: none;
+        color: #007A8D;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 15px;
+        border: 1px solid #007A8D;
+        text-align: center; }
+        div.container .container__content .container__content__menu ul li.selected {
+          background: #007A8D !important;
+          color: #FFF; }
+    div.container .container__content .container__content__card {
+      background-color: #fff;
+      box-shadow: 0px 4px 5px 0px #C7C0C7;
+      text-align: center;
+      padding: 20px; }
+      div.container .container__content .container__content__card i {
+        color: #18ACC4; }
+      div.container .container__content .container__content__card container__content__card--title {
+        font-weight: 700;
+        font-size: 18px; }
+      div.container .container__content .container__content__card container__content__card--subtitle {
+        font-weight: 400;
+        font-size: 20px; }
+
+footer {
+  background: #007A8D;
+  text-align: center;
+  color: #FFF;
+  margin-top: 100px; }
+  footer .footer__contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px solid #18ACC4; }
+    footer .footer__contact .footer__contact--whatsapp i {
+      font-size: 50px;
+      margin-right: 20px; }
+    footer .footer__contact .footer__contact__info {
+      display: flex;
+      flex-direction: column; }
+      footer .footer__contact .footer__contact__info .footer__contact__info--a {
+        font-weight: bold;
+        text-align: left;
+        font-size: 20px;
+        color: #FFF;
+        margin-bottom: 10px; }
+      footer .footer__contact .footer__contact__info .footer__contact__info--span {
+        font-size: 16px; }
+  footer .footer__alternatives {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    footer .footer__alternatives div {
+      flex: 1;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      border-right: 3px solid #18ACC4;
+      font-size: 20px; }
+      footer .footer__alternatives div i {
+        font-size: 35px;
+        margin-bottom: 10px; }
+    footer .footer__alternatives div:last-child {
+      border-right: none; }
+  footer .footer__slogan {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: #18ACC4;
+    font-size: 20px;
+    font-weight: 600; }
+    footer .footer__slogan i {
+      margin: 0 7px; }
