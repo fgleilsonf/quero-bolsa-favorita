@@ -3,6 +3,7 @@ import './styles/app.css';
 import 'font-awesome/css/font-awesome.min.css';
 import AddScholarships from './modules/AddScholarships';
 import Home from './modules/Home';
+import ScreenModal from './components/ScreenModal';
 
 class App extends React.Component {
 
@@ -25,9 +26,9 @@ class App extends React.Component {
             <div className="App">
                 <Home openModal={this.openModal} />
 
-                {
-                    this.state.openModal && <AddScholarships closeModal={this.openModal} />
-                }
+                <ScreenModal visible={this.state.openModal} onPressClose={this.openModal}>
+                    <AddScholarships closeModal={this.openModal} />
+                </ScreenModal>
             </div>
         );
     }

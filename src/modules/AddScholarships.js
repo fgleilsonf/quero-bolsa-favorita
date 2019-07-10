@@ -40,7 +40,7 @@ class AddScholarships extends React.Component {
         }
 
         return (
-            <div>
+            <div className="modal__add_scholarships">
                 <h1>Adicionar Bolsa</h1>
                 <p>Filtre e adicione as bolsas de seu interesse</p>
 

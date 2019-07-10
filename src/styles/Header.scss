@@ -1,0 +1,88 @@
+@import "variables";
+
+$actionSize: 30px;
+
+.appbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+  0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.toolbar {
+  display: flex;
+  min-height: 56px;
+  align-items: center;
+  color: #ffffff;
+  justify-content: space-between;
+}
+
+.left_container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.actions_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 8px;
+  margin-left: 8px;
+
+  .action_container {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 6px;
+
+    .action_icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: $actionSize;
+      height: $actionSize;
+    }
+
+    svg {
+      fill: #fff;
+      width: ($actionSize - 6) !important;
+      height: ($actionSize - 6) !important;
+    }
+
+    .action_text {
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+    }
+  }
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  width: 20px !important;
+  height: 20px !important;
+  fill: #fff;
+  margin-left: 16px;
+}
+
+.container_title {
+  margin-left: 16px;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+
+  .title {
+    font-weight: 500;
+    font-size: 13pt;
+  }
+
+  .subtitle {
+    font-size: 9pt;
+  }
+}
